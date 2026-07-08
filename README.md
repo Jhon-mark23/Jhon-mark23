@@ -1,16 +1,19 @@
-## Hi there 👋
+# Hi there, I'm Jhon Mark 👋
 
-<!--
-**Jhon-mark23/Jhon-mark23** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Welcome to my GitHub profile!
 
-Here are some ideas to get you started:
+## 🚀 About Me
+- Grade 12 TVL-ICT Student in Philippine Women's University Sta Cruz Laguna Branch 
+- Interested in Programming but im lazy dumb ass
+- I use a lot AI while im doing website or anything 
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+
+## Social Media Links 
+- Facebook: https://www.facebook.com/jhon.marc.martinez.2025
+
+## ⚡ Fun Fact
+I enjoy creating useful tools but not complete lot of my repo is not cot complete or sometimes it works in my device but in your device 
+
+---
+⭐ Thanks for visiting my profile!
