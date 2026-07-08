@@ -1,4 +1,4 @@
-# Hi there, I'm Jhon Mark 👋
+# Hi there, I'm Jhon Marc 👋
 
 Welcome to my GitHub profile!
 
