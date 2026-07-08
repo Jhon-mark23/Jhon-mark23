@@ -13,7 +13,7 @@ Welcome to my GitHub profile!
 - Facebook: https://www.facebook.com/jhon.marc.martinez.2025
 
 ## ⚡ Fun Fact
-I enjoy creating useful tools but not complete lot of my repo is not cot complete or sometimes it works in my device but in your device 
+I enjoy creating useful tools but not complete lot of my repo is not cot complete or sometimes it works in my device but not in your device 
 
 ---
 ⭐ Thanks for visiting my profile!
