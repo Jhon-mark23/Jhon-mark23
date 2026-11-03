@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jhon Marc · GitHub profile</title>
+  <!-- Font Awesome for social icons (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    }
+    body {
+      background: #f6f8fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 1.5rem;
+    }
+    .card {
+      max-width: 780px;
+      width: 100%;
+      background: #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08), 0 4px 10px rgba(0, 0, 0, 0.02);
+      padding: 2.5rem 2.5rem 2rem;
+      border: 1px solid #eaeef2;
+      transition: all 0.2s;
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: #1f2a44;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
+    }
+    h1 .wave {
+      font-size: 2rem;
+      display: inline-block;
+      animation: wave 2s infinite;
+      transform-origin: 70% 70%;
+    }
+    @keyframes wave {
+      0% { transform: rotate(0deg); }
+      20% { transform: rotate(14deg); }
+      40% { transform: rotate(-4deg); }
+      60% { transform: rotate(10deg); }
+      80% { transform: rotate(-2deg); }
+      100% { transform: rotate(0deg); }
+    }
+    .welcome {
+      font-size: 1.1rem;
+      color: #4a5a6e;
+      margin-bottom: 1.75rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #dfe4e9;
+      font-weight: 400;
+    }
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #1f2a44;
+      margin: 1.8rem 0 1rem 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section-title i {
+      color: #3b6ea5;
+      font-size: 1.2rem;
+    }
+    .about-list {
+      list-style: none;
+      margin-bottom: 0.5rem;
+    }
+    .about-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 0.6rem 0;
+      color: #2d3f54;
+      font-size: 1rem;
+      line-height: 1.5;
+      border-bottom: 1px dashed #e2e8f0;
+    }
+    .about-list li:last-child {
+      border-bottom: none;
+    }
+    .about-list li i {
+      color: #2c6b9e;
+      font-size: 1.1rem;
+      width: 1.4rem;
+      text-align: center;
+      margin-top: 3px;
+    }
+    .social-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 1.2rem 0 1.8rem 0;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0.6rem 1.2rem;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: white;
+      transition: transform 0.15s, box-shadow 0.15s, filter 0.15s;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .badge i {
+      font-size: 1.2rem;
+      width: 1.2rem;
+    }
+    .badge-facebook {
+      background: #344e86;
+    }
+    .badge-instagram {
+      background: #e4405f;
+    }
+    .badge-telegram {
+      background: #26a6e1;
+    }
+    .badge:hover {
+      transform: scale(1.02) translateY(-2px);
+      box-shadow: 0 10px 18px -8px rgba(0, 0, 0, 0.25);
+      filter: brightness(0.95);
+    }
+    .fun-fact {
+      background: #f0f5fa;
+      padding: 1.5rem 1.5rem 1.5rem 1.8rem;
+      border-radius: 18px;
+      margin: 1.5rem 0 1.2rem 0;
+      border-left: 6px solid #f7b731;
+      font-style: italic;
+      color: #1f2a44;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+    }
+    .fun-fact i {
+      color: #f7b731;
+      font-size: 1.8rem;
+      line-height: 1;
+    }
+    .fun-fact span {
+      font-weight: 500;
+    }
+    hr {
+      border: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #cbd5e0, transparent);
+      margin: 1.8rem 0 1rem 0;
+    }
+    .footer-note {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      color: #5d6f83;
+      font-size: 0.95rem;
+      font-weight: 400;
+      padding-top: 0.5rem;
+    }
+    .footer-note i {
+      color: #f7b731;
+    }
+    /* small screens */
+    @media (max-width: 550px) {
+      .card {
+        padding: 1.8rem 1.5rem 1.5rem;
+      }
+      h1 {
+        font-size: 1.9rem;
+      }
+      .badge {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- header -->
+    <h1>
+      Hi there, I'm Jhon Marc
+      <span class="wave">👋</span>
+    </h1>
+    <div class="welcome">Welcome to my GitHub profile!</div>
+
+    <!-- about me -->
+    <div class="section-title">
+      <i class="fas fa-rocket"></i> 🚀 About Me
+    </div>
+    <ul class="about-list">
+      <li>
+        <i class="fas fa-graduation-cap"></i>
+        <span>Grade 12 TVL-ICT student at Philippine Women's University (Sta. Cruz, Laguna Branch)</span>
+      </li>
+      <li>
+        <i class="fas fa-code"></i>
+        <span>Aspiring developer exploring web technologies and automated tools</span>
+      </li>
+      <li>
+        <i class="fas fa-robot"></i>
+        <span>Heavy user of AI tooling to accelerate development and coding workflows</span>
+      </li>
+    </ul>
+
+    <!-- connect -->
+    <div class="section-title">
+      <i class="fas fa-paper-plane"></i> 📬 Connect with Me
+    </div>
+    <div class="social-badges">
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/jhon.marc.martinez.2025" target="_blank" rel="noopener noreferrer" class="badge badge-facebook">
+        <i class="fab fa-facebook-f"></i> jhon.marc.martinez.2025
+      </a>
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/__itsmemarc" target="_blank" rel="noopener noreferrer" class="badge badge-instagram">
+        <i class="fab fa-instagram"></i> __itsmemarc
+      </a>
+      <!-- Telegram -->
+      <a href="https://t.me/Kilt12" target="_blank" rel="noopener noreferrer" class="badge badge-telegram">
+        <i class="fab fa-telegram-plane"></i> Kilt12
+      </a>
+    </div>
+
+    <!-- fun fact -->
+    <div class="section-title">
+      <i class="fas fa-bolt"></i> ⚡ Fun Fact
+    </div>
+    <div class="fun-fact">
+      <i class="fas fa-laptop-code"></i>
+      <span>Classic "works on my machine" developer—I love building quick prototypes and experimental tools, even if half of them stay unfinished!</span>
+    </div>
+
+    <hr>
+    <div class="footer-note">
+      <i class="fas fa-star"></i> Thanks for visiting my profile! <i class="fas fa-star"></i>
+    </div>
+  </div>
+</body>
+</html>
